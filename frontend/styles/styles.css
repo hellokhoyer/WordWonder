@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading {
+  color: #4b5563;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.player-ready {
+  background-color: #10b981;
+  transition: background-color 0.3s;
+}
+
+.player-ready:hover {
+  background-color: #059669;
+}
+
+.player-playing {
+  background-color: #3b82f6;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.audio-playback {
+  display: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#word {
+  margin-left: 6%;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  transition: transform 0.2s ease;
+}
+
+.refresh-btn:hover {
+  transform: rotate(45deg);
+}
+
+.refresh-btn:active {
+  transform: rotate(90deg);
+}
+
+/* Footer - now handled by Tailwind classes in HTML */
+.footer {
+  /* Styles moved to HTML classes for better control */
+}
+
+/* Utility padding class */
+.u-padding-T-xl {
+  padding-top: 32px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

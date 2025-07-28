@@ -1,0 +1,23 @@
+{
+  "name": "wordwonder-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "build:frontend": "cd ../frontend && npm install && npm run build"
+  },
+  "author": "Abul Khoyer",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
