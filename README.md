@@ -125,7 +125,7 @@ Deploy only the `/backend` directory.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 wordwonder/
@@ -143,7 +143,7 @@ wordwonder/
 
 ---
 
-## 📦 Word Data Structure
+## Word Data Structure
 
 The backend uses a JSON file (`words.json`) as a mock database.
 
@@ -175,7 +175,5 @@ The backend uses a JSON file (`words.json`) as a mock database.
 ---
 
 > “Words are free. It’s how you use them that may cost you.”
-
-```
 
 ```
