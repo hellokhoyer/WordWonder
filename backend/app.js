@@ -154,8 +154,7 @@ app.get("/api/related-words/:word", async (req, res) => {
   const { word } = req.params;
   const { type } = req.query;
   const apiKey =
-    process.env.WORDNIK_API_KEY_2 ||
-    "8e5956350987aa6b0521e0c4761074eabe07f42e9d8fd1492";
+    process.env.WORDNIK_API_KEY_2;
   const apiUrl = `https://api.wordnik.com/v4/word.json/${word}/relatedWords?useCanonical=true&relationshipTypes=${type}&limitPerRelationshipType=5&api_key=${apiKey}`;
 
   try {
